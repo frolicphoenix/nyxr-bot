@@ -1,0 +1,55 @@
+/* Info panel styling */
+.info-panel {
+    @apply w-96 flex flex-col space-y-4;
+  }
+  
+  /* Welcome message */
+  .welcome-message {
+    @apply bg-gray-900 border-2 border-yellow-500 rounded-md p-4 text-yellow-400 font-mono;
+  }
+  
+  /* Command guide */
+  .command-guide {
+    @apply flex-1 bg-gray-900 rounded-md overflow-hidden flex flex-col;
+  }
+  
+  .guide-header {
+    @apply bg-red-900 p-2 text-white font-semibold;
+  }
+  
+  .guide-content {
+    @apply p-4 font-mono text-gray-300 text-sm;
+  }
+  
+  .guide-section {
+    @apply mb-4;
+  }
+  
+  .guide-item {
+    @apply mb-1;
+  }
+  
+  .guide-example {
+    @apply ml-2 mb-1;
+  }
+  
+  /* Guide syntax colors */
+  .guide-label {
+    @apply text-gray-400;
+  }
+  
+  .guide-arrow {
+    @apply text-gray-400;
+  }
+  
+  .guide-text {
+    @apply text-gray-300;
+  }
+  
+  .guide-output {
+    @apply text-green-600;
+  }
+  
+  .guide-bracket {
+    @apply text-yellow-400;
+  }

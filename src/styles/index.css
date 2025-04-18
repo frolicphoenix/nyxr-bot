@@ -1,0 +1,9 @@
+/* Main CSS imports for Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import component styles */
+@import './terminal.css';
+@import './commandOutput.css';
+@import './infoPanel.css';

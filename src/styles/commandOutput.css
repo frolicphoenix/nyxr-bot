@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .terminal-scrollable {
+    @apply overflow-y-auto max-h-60 px-2;
+  }
+}
+
+
+/* Terminal text colors */
+.terminal-prompt {
+    @apply text-white font-mono;
+  }
+  
+  .terminal-command {
+    @apply text-red-400;
+  }
+  
+  .terminal-subcommand {
+    @apply text-blue-400;
+  }
+  
+  .terminal-item {
+    @apply text-yellow-400;
+  }
+  
+  .terminal-input {
+    @apply text-green-400;
+  }
+  
+  .terminal-response {
+    @apply text-green-400 font-mono;
+  }
+  
+  /* Terminal header */
+  .terminal-header-bar {
+    @apply bg-gray-700 p-2 font-mono text-gray-300;
+  }
+  
+  /* Terminal input area */
+  .terminal-input-area {
+    @apply p-2 border-t border-gray-700;
+  }
+  
+  .terminal-input-field {
+    @apply flex-1 bg-transparent text-red-400 font-mono outline-none ml-1;
+  }
+  
+  /* Terminal output area */
+  .terminal-output-area {
+    @apply flex-1 p-4 font-mono text-green-400 overflow-y-auto terminal-scrollable;
+  }
+  
+  .terminal-line {
+    @apply mb-1;
+  }

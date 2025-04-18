@@ -1,0 +1,100 @@
+import React from 'react';
+
+/**
+ * Command guide component that shows command syntax and examples
+ */
+const CommandGuide = () => {
+  return (
+    <div className="flex-1 bg-gray-900 rounded-md overflow-hidden flex flex-col">
+      <div className="bg-red-900 p-2 text-white font-semibold">
+        Guide: How to use the commands
+      </div>
+      <div className="p-4 font-mono text-gray-300 text-sm">
+        <div className="mb-4">
+          <span className="text-gray-400">{'->'} syntax: </span>
+          <span className="text-red-400">command </span>
+          <span className="text-blue-400">subcommand </span>
+          <span className="text-yellow-400">(item) </span>
+          <span className="text-green-400">input</span>
+        </div>
+        
+        <div className="mb-1">
+          <span className="text-gray-400">{'->'} </span>
+          <span className="text-red-400">command </span>
+          {'->'} <span className="text-yellow-400">{'{'}</span><span className="text-red-400">nyxr</span><span className="text-yellow-400">{'}'}</span>
+        </div>
+        
+        <div className="mb-1">
+          <span className="text-gray-400">{'->'} </span>
+          <span className="text-blue-400">subcommand </span>
+          {'->'} <span className="text-yellow-400">{'{'}</span><span className="text-blue-400">start, show</span><span className="text-yellow-400">{'}'}</span>
+        </div>
+        
+        <div className="mb-1">
+          <span className="text-gray-400">{'->'} </span>
+          <span className="text-green-400">input </span>
+          {'->'} <span className="text-yellow-400">{'{'}</span><span className="text-green-400">name, education, hobbies</span><span className="text-yellow-400">{'}'}</span>
+        </div>
+        
+        <div className="mb-4">
+          <span className="text-gray-400">{'->'} </span>
+          <span className="text-green-600">output </span>
+          {'->'} <span className="text-green-400">Well, hello there!</span>
+        </div>
+        
+        <div className="mb-1">
+          <span className="text-gray-400">{'->'} Start with this (&gt;&gt;: </span>
+          <span className="text-red-400">nyxr </span>
+          <span className="text-blue-400">start</span>
+          <span className="text-gray-400">)</span>
+        </div>
+        
+        <div className="mb-4">
+          <span className="text-gray-400">{'->'} </span>
+          <span className="text-green-400">Well, hello there!</span>
+        </div>
+        
+        <div className="mb-1">
+          <span className="text-gray-400">{'->'} Examples:</span>
+        </div>
+        
+        <div className="ml-2 mb-1">
+          <span className="text-gray-400">&gt;&gt;: </span>
+          <span className="text-red-400">nyxr </span>
+          <span className="text-blue-400">show </span>
+          <span className="text-yellow-400">contact</span>
+        </div>
+        
+        <div className="ml-2 mb-1">
+          <span className="text-gray-400">&gt;&gt;: </span>
+          <span className="text-red-400">nyxr </span>
+          <span className="text-blue-400">list </span>
+          <span className="text-yellow-400">skills</span>
+        </div>
+        
+        <div className="ml-2 mb-1">
+          <span className="text-gray-400">&gt;&gt;: </span>
+          <span className="text-red-400">nyxr </span>
+          <span className="text-blue-400">detail </span>
+          <span className="text-yellow-400">project </span>
+          <span className="text-green-400">Modelxyz</span>
+        </div>
+        
+        <div className="ml-2 mb-1">
+          <span className="text-gray-400">&gt;&gt;: </span>
+          <span className="text-red-400">nyxr </span>
+          <span className="text-blue-400">check </span>
+          <span className="text-yellow-400">availability</span>
+        </div>
+        
+        <div className="ml-2 mb-1">
+          <span className="text-gray-400">&gt;&gt;: </span>
+          <span className="text-red-400">nyxr </span>
+          <span className="text-blue-400">help</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export { CommandGuide };

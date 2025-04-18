@@ -1,0 +1,33 @@
+/* Terminal container styling */
+.terminal-container {
+    @apply flex flex-col h-screen bg-gray-800;
+  }
+  
+  .terminal-header {
+    @apply bg-gray-200 p-2 font-bold;
+  }
+  
+  .terminal-body {
+    @apply flex flex-1 p-4 overflow-hidden;
+  }
+  
+  .terminal-main {
+    @apply flex-1 bg-gray-900 rounded-md mr-4 overflow-hidden flex flex-col;
+  }
+  
+  /* Scrollbar styling for terminal */
+  .terminal-scrollable::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  .terminal-scrollable::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+  }
+  
+  .terminal-scrollable::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded;
+  }
+  
+  .terminal-scrollable::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
