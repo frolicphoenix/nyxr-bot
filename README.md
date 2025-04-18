@@ -1,12 +1,45 @@
-# React + Vite
+# NYX Terminal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![NYX Terminal Interface](src/assets/landingpage.png)
 
-Currently, two official plugins are available:
+A sleek, interactive terminal-style interface built with React and Tailwind CSS that simulates a command-line portfolio. NYX Terminal offers an engaging way to showcase personal information, projects, and interests through a developer-friendly interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+- **React** - UI components and state management  
+- **Tailwind CSS** - Styling and layout  
+- **ES6+** - Modern JavaScript features  
+- **React Hooks** - State and side effects management 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- 🖥️ Terminal-like user interface with command prompt
+- 🎨 Color-coded command syntax for easy readability
+- 💾 Multiple data categories (projects, skills, anime, manga, games)
+- 📝 Detailed command documentation and help system
+- ⌨️ Command history and scrollable output
+- 🧩 Modular component architecture
+- 🔄 Easily extensible for custom data and commands
+
+## Live Demo
+
+Check out the [live demo](https://your-demo-url.com) to try it yourself!
+
+## Commands
+
+NYX Terminal uses a structured command syntax: `nyxr [subcommand] [item] [input]`
+
+### Available Commands
+
+```bash
+nyxr start                     # Show welcome message
+nyxr help                      # Display available commands
+nyxr show contact              # Display contact information
+nyxr show anime                # List all anime with details
+nyxr show manga                # List all manga with details
+nyxr list skills               # List all technical skills
+nyxr list hobbies              # List all hobbies
+nyxr detail project Modelxyz   # Show details of specific project
+nyxr detail anime "Death Note" # Show details of specific anime
+nyxr check availability        # Check availability status
+```
