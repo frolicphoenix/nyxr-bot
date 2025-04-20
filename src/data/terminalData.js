@@ -9,87 +9,106 @@ const terminalData = {
    * Contact information
    */
   contact: {
-    email: "foenyx@example.com",
-    github: "github.com/foenyx",
-    linkedin: "linkedin.com/in/foenyx"
+    email: "pranjalmlokhande@gmail.com",
+    github: "github.com/frolicphoenix",
+    linkedin: "linkedin.com/in/pranjallokhande",
+    medium: "medium.com/@pranjalmlokhande",
+    youtube: "youtube.com/@theunrealdesigner"
   },
 
   /**
    * Technical skills
    */
-  skills: [
-    "JavaScript", 
-    "React", 
-    "Node.js", 
-    "Python", 
-    "CSS/SASS", 
-    "UI/UX Design"
-  ],
+  skills: {
+    languages: ["C#", "JavaScript", "PHP", "C++", "Objective-C", "SQL", "Python"],
+    frameworks: ["React", "Node", "TypeScript", "Angular", ".NET"],
+    tools: ["AJAX", "HTTP", "XML", "MS SQL Server", "Azure", "Git", "Docker"],
+    gameDev: ["Unity", "Unreal Engine"]
+  },
 
   /**
    * Projects with details
    */
   projects: {
-    Modelxyz: {
-      description: "A 3D model viewer with AR capabilities",
-      technologies: ["Three.js", "React", "WebXR"],
+    'Pokémon Unite Build Tracker': {
+      description: "Pokémon Unite Build Tracker is an ASP.NET Core Web App that helps users to check the stats of their pokémon by attaching held items and a battle item and save the builds.",
+      technologies: ["C#", "ASP.NET MVC"],
+      link: "github.com/frolicphoenix/PokemonUniteBuildTracker_PassionProject",
       status: "Completed"
     },
-    // Add more projects here
+    'Astronomy in Books': {
+      description: "Astronomy in Books offers a way to discover books related to astronomical events by tapping into NASA's astronomical data and Google Books' vast library.",
+      technologies: ["PUG", "Google Books API", "NASA API"],
+      link: "github.com/frolicphoenix/astronomy-in-books",
+      status: "Completed"
+    },
+    'Virtual Zoo': {
+      description: "Virtual Zoo is a minimal Infrastructure as Code (IaC) experiment where pets are deployed, aged, and cared for like virtual machines in a cloud.",
+      technologies: ["Go", "Python", "YAML", "HTTP (REST)", "Mutex"],
+      link: "github.com/frolicphoenix/virtualzoo",
+      status: "Completed"
+    }
   },
 
   /**
    * Personal hobbies
    */
   hobbies: [
-    "Anime & Manga", 
-    "Game Development", 
+    "Video Games",
+    "Astronomy", 
+    "Anime & Manga",
+    "Books",
     "Digital Art", 
-    "Music Production"
+    "Ice Skating"
   ],
 
   /**
    * Educational background
    */
   education: {
-    degree: "Computer Science",
-    university: "Tech University",
-    year: "2023"
+    associates: {
+      degree: "Post Graduation",
+      field: "Web Development",
+      institution: "Humber College, Canada",
+      year: 2024
+    },
+    masters: {
+      degree: "Master of Science",
+      field: "Game Design",
+      institution: "Full Sail University, USA",
+      year: 2021
+    },
+    bachelors: {
+      degree: "Bachelor of Technology",
+      field: "Computer Science and Engineering",
+      institution: "Rai University, India",
+      year: 2019
+    }
   },
 
   /**
    * Availability status
    */
-  availability: "Available for freelance work and collaborations",
+  availability: "Available for FULL TIME, freelance work and collaborations.",
 
   /**
-   * Anime list with ratings and genres
+   * Anime list with ratings and genres - currently watching
    */
   anime: [
     { 
-      title: "Attack on Titan", 
+      title: "Frieren: Beyond Journey's End", 
       rating: "10/10", 
-      genres: ["Action", "Drama", "Fantasy"] 
+      genres: ["Adventure", "Drama", "Fantasy"] 
     },
     { 
-      title: "Death Note", 
+      title: "My Happy Marriage S2", 
+      rating: "8.5/10", 
+      genres: ["Drama", "Fantasy", "Romance"] 
+    },
+    { 
+      title: "The Apothecary Diaries S2", 
       rating: "9.5/10", 
-      genres: ["Mystery", "Psychological", "Thriller"] 
-    },
-    { 
-      title: "Fullmetal Alchemist: Brotherhood", 
-      rating: "9.8/10", 
-      genres: ["Action", "Adventure", "Fantasy"] 
-    },
-    { 
-      title: "Demon Slayer", 
-      rating: "9.3/10", 
-      genres: ["Action", "Supernatural"] 
-    },
-    { 
-      title: "My Hero Academia", 
-      rating: "8.7/10", 
-      genres: ["Action", "Comedy", "Superhero"] 
+      genres: ["Drama", "Mystery", "Historical"] 
     }
   ],
 
@@ -98,34 +117,22 @@ const terminalData = {
    */
   manga: [
     { 
-      title: "Berserk", 
-      rating: "10/10", 
-      author: "Kentaro Miura", 
-      genres: ["Dark Fantasy", "Horror"] 
+      title: "Solo Leveling", 
+      rating: "8.5/10", 
+      author: [ "Chugong (Story)", "Jang, Sung-rak (Art)", "Disciples (Art)"], 
+      genres: ["Action", "Fantasy", "Adventure"] 
     },
     { 
-      title: "Vagabond", 
+      title: "Gokusen", 
       rating: "9.7/10", 
-      author: "Takehiko Inoue", 
-      genres: ["Action", "Historical"] 
+      author: "Morimoto, Kozueko", 
+      genres: ["Action", "Comedy", "Romance", "Slice of Life"] 
     },
     { 
-      title: "One Piece", 
-      rating: "9.5/10", 
-      author: "Eiichiro Oda", 
-      genres: ["Adventure", "Fantasy"] 
-    },
-    { 
-      title: "Chainsaw Man", 
-      rating: "9.2/10", 
-      author: "Tatsuki Fujimoto", 
-      genres: ["Action", "Horror"] 
-    },
-    { 
-      title: "Spy x Family", 
-      rating: "8.9/10", 
-      author: "Tatsuya Endo", 
-      genres: ["Action", "Comedy"] 
+      title: "Horimiya", 
+      rating: "8/10", 
+      author: " Hagiwara, Daisuke", 
+      genres: ["Romance", "School", "Shounen"] 
     }
   ],
 
@@ -134,36 +141,21 @@ const terminalData = {
    */
   games: [
     { 
-      title: "The Legend of Zelda: Breath of the Wild", 
-      platform: "Nintendo Switch", 
-      rating: "10/10" 
+      title: "Genshin Impact",
+      platform: "PC", 
+      rating: "8/10" 
     },
     { 
-      title: "Elden Ring", 
-      platform: "PC/Console", 
-      rating: "9.8/10" 
-    },
-    { 
-      title: "Final Fantasy VII Remake", 
-      platform: "PlayStation", 
-      rating: "9.5/10" 
-    },
-    { 
-      title: "Hollow Knight", 
-      platform: "PC/Console", 
-      rating: "9.6/10" 
-    },
-    { 
-      title: "Persona 5 Royal", 
-      platform: "PlayStation/PC", 
-      rating: "9.7/10" 
+      title: "Split Fiction", 
+      platform: "PC", 
+      rating: "8.5/10" 
     }
   ],
 
   /**
    * Welcome message that appears on terminal startup
    */
-  welcomeMessage: "Well, hello there! I created this web app for fun. This is basically a chat-bot version of myself (portfolio and hobbies). It also lists my top list of anime and manga. Go ahead, try it out~!"
+  welcomeMessage: "Well, hello there! I am Pranjall and I created this web app for fun. This is basically a chat-bot version of myself (portfolio and hobbies). It also lists my current list of anime, manga and games. Go ahead, try it out~!\n\n"
 };
 
 export default terminalData;

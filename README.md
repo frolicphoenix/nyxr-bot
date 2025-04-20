@@ -23,7 +23,7 @@ A sleek, interactive terminal-style interface built with React and Tailwind CSS 
 
 ## Live Demo
 
-Check out the [live demo](https://your-demo-url.com) to try it yourself!
+Check out the [live demo](https://bot.pranjallokhande.com/) to try it yourself!
 
 ## Commands
 
@@ -39,6 +39,7 @@ nyxr show anime                # List all anime with details
 nyxr show manga                # List all manga with details
 nyxr list skills               # List all technical skills
 nyxr list hobbies              # List all hobbies
+nyxr list project              # List all projects
 nyxr detail project Modelxyz   # Show details of specific project
 nyxr detail anime "Death Note" # Show details of specific anime
 nyxr check availability        # Check availability status

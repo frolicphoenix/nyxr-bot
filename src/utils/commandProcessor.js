@@ -56,20 +56,29 @@ const processCommand = (cmd) => {
  */
 const handleShowCommand = (item) => {
   if (item === 'contact') {
-    return `Email: ${terminalData.contact.email}\nGitHub: ${terminalData.contact.github}\nLinkedIn: ${terminalData.contact.linkedin}`;
+    return `Email: ${terminalData.contact.email}\nGitHub: ${terminalData.contact.github}\nLinkedIn: ${terminalData.contact.linkedin}\nMedium: ${terminalData.contact.medium}\nYouTube: ${terminalData.contact.youtube}`;
   } else if (item === 'anime') {
     return terminalData.anime.map(a => 
-      `${a.title} - Rating: ${a.rating} - Genres: ${a.genres.join(', ')}`
+      `-> ${a.title}\n Rating: ${a.rating}\n Genres: ${a.genres.join(', ')}`
     ).join('\n');
   } else if (item === 'manga') {
     return terminalData.manga.map(m => 
-      `${m.title} - By ${m.author} - Rating: ${m.rating} - Genres: ${m.genres.join(', ')}`
+      `-> ${m.title} By ${m.author}\n Rating: ${m.rating}\n Genres: ${m.genres.join(', ')}`
     ).join('\n');
   } else if (item === 'games') {
     return terminalData.games.map(g => 
-      `${g.title} - Platform: ${g.platform} - Rating: ${g.rating}`
+      `-> ${g.title}\n Platform: ${g.platform}\n Rating: ${g.rating}`
     ).join('\n');
-  }
+  } else if (item === 'projects') {
+    return Object.entries(terminalData.projects).map(([name, details]) => 
+      `-> ${name} - ${details.description}\n Technologies: ${details.technologies.join(', ')}\n Status: ${details.status}`
+    ).join('\n');
+  } else if (item === 'education') {
+  const educationEntries = Object.entries(terminalData.education);
+  return educationEntries.map(([level, details]) => 
+    `-> ${details.degree} in ${details.field} from ${details.institution} (${details.year})`
+  ).join('\n');
+}
   
   return "Please specify what to show (e.g., 'nyxr show contact', 'nyxr show anime')";
 };
@@ -80,9 +89,7 @@ const handleShowCommand = (item) => {
  * @returns {string} Formatted response
  */
 const handleListCommand = (item) => {
-  if (item === 'skills') {
-    return terminalData.skills.join(', ');
-  } else if (item === 'hobbies') {
+  if (item === 'hobbies') {
     return terminalData.hobbies.join(', ');
   } else if (item === 'anime') {
     return terminalData.anime.map(a => a.title).join(', ');
@@ -90,6 +97,12 @@ const handleListCommand = (item) => {
     return terminalData.manga.map(m => m.title).join(', ');
   } else if (item === 'games') {
     return terminalData.games.map(g => g.title).join(', ');
+  } else if (item === 'projects') {
+    return Object.keys(terminalData.projects).join('\n');
+  } else if (item === 'skills') {
+    return Object.entries(terminalData.skills).map(([category, skills]) => 
+      `${category.charAt(0).toUpperCase() + category.slice(1)}: ${skills.join(', ')}`
+    ).join('\n');
   }
   
   return "Please specify what to list (e.g., 'nyxr list skills', 'nyxr list anime')";
@@ -151,20 +164,28 @@ const handleCheckCommand = (item) => {
 const getHelpText = () => {
   return `Available commands:
 - nyxr start: Welcome message
+\n
 - nyxr show contact: Show contact information
 - nyxr show anime: Show anime list with details
 - nyxr show manga: Show manga list with details
 - nyxr show games: Show games list with details
+- nyxr show projects: Show projects list with details
+- nyxr show education: Show education details
+\n
 - nyxr list skills: List technical skills
 - nyxr list hobbies: List hobbies
 - nyxr list anime: List anime titles only
 - nyxr list manga: List manga titles only
 - nyxr list games: List game titles only
+- nyxr list projects: List project names only
+\n
 - nyxr detail project [name]: Show project details
 - nyxr detail anime [title]: Show anime details
 - nyxr detail manga [title]: Show manga details
 - nyxr detail game [title]: Show game details
+\n
 - nyxr check availability: Check availability
+\n
 - nyxr help: Show this help message`;
 };
 

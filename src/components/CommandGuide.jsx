@@ -27,31 +27,31 @@ const CommandGuide = () => {
         <div className="mb-1">
           <span className="text-gray-400">{'->'} </span>
           <span className="text-blue-400">subcommand </span>
-          {'->'} <span className="text-yellow-400">{'{'}</span><span className="text-blue-400">start, show</span><span className="text-yellow-400">{'}'}</span>
+          {'->'} <span className="text-yellow-400">{'{'}</span><span className="text-blue-400">start, show, list, detail, check, help</span><span className="text-yellow-400">{'}'}</span>
         </div>
         
         <div className="mb-1">
           <span className="text-gray-400">{'->'} </span>
-          <span className="text-green-400">input </span>
-          {'->'} <span className="text-yellow-400">{'{'}</span><span className="text-green-400">name, education, hobbies</span><span className="text-yellow-400">{'}'}</span>
+          <span className="text-yellow-400">item </span>
+          {'->'} <span className="text-yellow-400">{'{'}</span><span className="text-yellow-400">contact, projects, skills, education, hobbies, anime, manga, games</span><span className="text-yellow-400">{'}'}</span>
         </div>
         
         <div className="mb-4">
           <span className="text-gray-400">{'->'} </span>
-          <span className="text-green-600">output </span>
-          {'->'} <span className="text-green-400">Well, hello there!</span>
+          <span className="text-green-600">input </span>
+          {'->'} <span className="text-yellow-400">{'{'}</span><span className="text-green-400">title/name</span><span className="text-yellow-400">{'}'}</span>
         </div>
         
         <div className="mb-1">
-          <span className="text-gray-400">{'->'} Start with this (&gt;&gt;: </span>
+          <span className="text-gray-400">{'->'} <b>START WITH THIS</b> (&gt;&gt;: </span>
           <span className="text-red-400">nyxr </span>
-          <span className="text-blue-400">start</span>
+          <span className="text-blue-400">help</span>
           <span className="text-gray-400">)</span>
         </div>
         
         <div className="mb-4">
-          <span className="text-gray-400">{'->'} </span>
-          <span className="text-green-400">Well, hello there!</span>
+          <span className="text-gray-400"> </span>
+          <span className="text-green-400"></span>
         </div>
         
         <div className="mb-1">
@@ -77,7 +77,7 @@ const CommandGuide = () => {
           <span className="text-red-400">nyxr </span>
           <span className="text-blue-400">detail </span>
           <span className="text-yellow-400">project </span>
-          <span className="text-green-400">Modelxyz</span>
+          <span className="text-green-400">NAME</span>
         </div>
         
         <div className="ml-2 mb-1">
