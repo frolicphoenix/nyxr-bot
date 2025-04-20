@@ -71,7 +71,7 @@ const handleShowCommand = (item) => {
     ).join('\n');
   } else if (item === 'projects') {
     return Object.entries(terminalData.projects).map(([name, details]) => 
-      `-> ${name} - ${details.description}\n Technologies: ${details.technologies.join(', ')}\n Status: ${details.status}`
+      `-> ${name} - ${details.description}\n Technologies: ${details.technologies.join(', ')}\n Status: ${details.status}\n Link: ${details.link}`
     ).join('\n');
   } else if (item === 'education') {
   const educationEntries = Object.entries(terminalData.education);
@@ -118,7 +118,7 @@ const handleDetailCommand = (item, input) => {
   if (item === 'project' && input) {
     const project = terminalData.projects[input];
     if (project) {
-      return `Project: ${input}\nDescription: ${project.description}\nTechnologies: ${project.technologies.join(', ')}\nStatus: ${project.status}`;
+      return `Project: ${input}\nDescription: ${project.description}\nTechnologies: ${project.technologies.join(', ')}\nStatus: ${project.status}\n Link: ${details.link}`;
     }
     return `Project "${input}" not found. Available projects: ${Object.keys(terminalData.projects).join(', ')}`;
   } else if (item === 'anime' && input) {
